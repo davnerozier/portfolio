@@ -1,26 +1,327 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <script type="text/JavaScript" src="myScript.js"></script>
-</head>
-<title>portfolio</title>
-<body>
-    <h1 class="header"><span id="title">Davne Rozier / portfolio</span><a id="email" href="mailto:davne.rozier@gmail.com">contact</a></h1>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1.0'>
+    <link rel='stylesheet' href='styles.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Davne Rozier / Portfolio</h1>
+      <navbar id='navbar'>
+        <span class="material-symbols-outlined">
+          lightbulb
+        </span>
+        <a href='#projects'>Projects</a>
+        <a href='#certifications'>Certifications</a>
+      </navbar>
+    </header>
+    <main>
 
+      <!-- PROJECTS-->
+      <section id='projects'>
 
-    <div class="content">
-    <h2><a class="section">web development</a></h2>
-    <a class="icon" href="https://davnerozier.github.io/postanpthropocene/" target="_blank" rel="noopener noreferrer"><img src="post-anthro-icon.png" width="175"></a>
+        <!-- Phenotyping-->
+        <div class='project-tile'>
+          <label for='phenotyping'>
+            <img src='phenotyping-tile.png' alt='phenotyping'>
+            <div class='show-detail-animation'>Pheno-<p>typing</p>animation</div>
+          </label>
+          <input type='checkbox' id='phenotyping' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <label for='phenotyping'>
+              <img src='phenotyping-crop.png' alt='phenotyping' width="100px" class="project-detail-image">
+            </label>
+            <div class="project-detail-info">
+              <p>Animation demonstrating functionality of agricultural robotics.</p>
+              <p>GIMP, InkScape, watercolor, ink</p>
+              <a href="https://www.youtube.com/watch?v=L2Woxvsx7Zs" target="_blank" class="open-project button">View project<span class="material-symbols-outlined">
+                open_in_new</span></a>
+              <label for='phenotyping'>
+                <a><div class='close-button button'></div></a>
+              </label>
+            </div>
+          </div>
+        </div>
 
-    <h2><a class="section">animation</a></h2>
-    <div class="icon"><a href="https://www.youtube.com/watch?v=Pqeka2fL_bk" target="_blank" rel="noopener noreferrer"><img src="selhar-icon.png" width="175"></a></div>
-    <div class="icon"><a href="https://www.youtube.com/watch?v=Kh12bgYVXyA" target="_blank" rel="noopener noreferrer"><img src="crop-care-icon.png" width="175"></a></div>
-    <div class="icon"><a href="https://www.youtube.com/watch?v=L2Woxvsx7Zs" target="_blank" rel="noopener noreferrer"><img src="phenotyping-icon.png" width="175"></a></div>
-    </div>
+        <!-- Ant ID
+        <div class='project-tile'>
+          <label for='ant-id'>
+            <img src='' alt='ant-id' width="250px">
+            <div class='show-detail-animation'>Ant identification key</div>
+          </label>
+          <input type='checkbox' id='ant-id' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <div class="project-detail-info">
+              <p>Ant species identification key.</p>
+              <a href="" target="_blank" class="open-project button">Open project</a>
+              <label for='ant-id'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div> -->
 
-</body>
+        <!-- Swim Animations
+        <div class='project-tile'>
+          <label for='swim-animations'>
+            <img src='' alt='swim-animations' width="250px">
+            <div class='show-detail-animation'>Swim animations</div>
+          </label>
+          <input type='checkbox' id='swim-animations' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <div class="project-detail-info">
+              <p>CSS animations of the 4 swim strokes.</p>
+              <p>CSS</p>
+              <a href="" target="_blank" class="open-project button">Open project</a>
+              <label for='swim-animations'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div> -->
 
+        <!-- Harvesting-->
+        <div class='project-tile'>
+          <label for='harvesting'>
+            <img src='harvesting-tile.png' alt='harvesting'>
+            <div class='show-detail-animation'>Harvesting animation</div>
+          </label>
+          <input type='checkbox' id='harvesting' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <label for='harvesting'>
+              <img src='harvesting-crop.png' alt='harvesting' width="100px" class="project-detail-image">
+            </label>
+            <div class="project-detail-info">
+              <p>Animation demonstrating functionality of agricultural robotics.</p>
+              <p>GIMP, InkScape, watercolor, ink</p>
+              <a href="https://www.youtube.com/watch?v=Pqeka2fL_bk" target="_blank" class="open-project button">Go to project<span class="material-symbols-outlined">
+                open_in_new</span></a>
+              <label for='harvesting'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Post-anthro-->
+        <div class='project-tile'>
+          <label for='post-anthropocene'>
+            <img src='post-anthro-tile.png' alt='post-anthropocene'>
+            <div class='show-detail-animation'>Post-anthropocene infra<p>structures</p></div>
+          </label>
+          <input type='checkbox' id='post-anthropocene' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <label for='post-anthropocene'>
+              <img src='post-anthro-crop.png' alt='post-anthropocene' class="project-detail-image">
+            </label>
+            <div class="project-detail-info">
+              <p>Interactive web presence for architectural portfolio project.</p>
+              <p>HTML, CSS, Javascript, InkScape</p>
+              <a href="https://davnerozier.github.io/postanpthropocene/" target="_blank" class="open-project button">Go to project<span class="material-symbols-outlined">
+                open_in_new</span></a>
+              <label for='post-anthropocene'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weeding-->
+        <div class='project-tile'>
+          <label for='weeding'>
+            <img src='crop-care-tile.png' alt='weeding'>
+            <div class='show-detail-animation'>Crop care animation</div>
+          </label>
+          <input type='checkbox' id='weeding' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <label for='weeding'>
+              <img src='crop-care-crop.png' alt='weeding' class="project-detail-image">
+            </label>
+            <div class="project-detail-info">
+              <p>Animation demonstrating functionality of agricultural robotics.</p>
+              <p>GIMP, InkScape, watercolor, ink</p>
+              <a href="https://www.youtube.com/watch?v=Kh12bgYVXyA" target="_blank" class="open-project button">Go to project<span class="material-symbols-outlined">
+                open_in_new</span></a>
+              <label for='weeding'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Color calc
+        <div class='project-tile'>
+          <label for='color-calculator'>
+            <img src='' alt='color-calculator' width="250px">
+            <div class='show-detail-animation'>Color calculator</div>
+          </label>
+          <input type='checkbox' id='color-calculator' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <div class="project-detail-info">
+              <p>Cert project</p>
+              <p>HTML CSS JavaScript</p>
+              <a href="" target="_blank" class="open-project button">Open project</a>
+              <label for='color-calculator'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Fish fry-->
+        <div class='project-tile'>
+          <label for='fish-fry-flyer'>
+            <img src='fish-fry-tile.png' alt='fish-fry-flyer'>
+            <div class='show-detail-animation'>Fish fry</div>
+          </label>
+          <input type='checkbox' id='fish-fry-flyer' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <label for='fish-fry-flyer'>
+              <img src='fish-fry-crop.png' alt='fish-fry-flyer' class="project-detail-image">
+            </label>
+            <div class="project-detail-info">
+              <p>Event flyer</p>
+              <p>Photoshop, watercolor, ink</p>
+              <a href="" target="_blank" class="open-project button">Open project</a>
+              <label for='fish-fry-flyer'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Survey Form
+        <div class='project-tile'>
+          <label for='survey-form'>
+            <img src='' alt='Survey Form' width="250px">
+            <div class='show-detail-animation'>Survey form</div>
+          </label>
+          <input type='checkbox' id='survey-form' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <div class="project-detail-info">
+              <p>Cert project</p>
+              <p>HTML, CSS</p>
+              <a href="" target="_blank" class="open-project button">Go to project<span class="material-symbols-outlined">
+                open_in_new</span></a>
+              <label for='survey-form'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div>-->
+
+        <!-- Tribute page
+        <div class='project-tile'>
+          <label for='tribute-page'>
+            <img src='' alt='Tribute Page' width="250px">
+            <div class='show-detail-animation'>Tribute page</div>
+          </label>
+          <input type='checkbox' id='tribute-page' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <div class="project-detail-info">
+              <p>Cert project</p>
+              <p>HTML, CSS</p>
+              <a href="" target="_blank" class="open-project button">Open project</a>
+              <label for='tribute-page'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div>-->
+
+        <!-- Tech doc
+        <div class='project-tile'>
+          <label for='technical-documentation-page'>
+            <img src='' alt='Technical Documentation Page' width="250px">
+            <div class='show-detail-animation'>Technical documen<p>tation</p></div>
+          </label>
+          <input type='checkbox' id='technical-documentation-page' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <div class="project-detail-info">
+              <p>Cert project</p>
+              <p>HTML, CSS</p>
+              <a href="" target="_blank" class="open-project button">Open project</a>
+              <label for='technical-documentation-page'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div>-->
+
+        <!-- Product landing
+        <div class='project-tile'>
+          <label for='product-landing-page'>
+            <img src='' alt='Product Landing Page' width="250px">
+            <div class='show-detail-animation'>Product landing page</div>
+          </label>
+          <input type='checkbox' id='product-landing-page' class='show-hide-checkbox' />
+          <div class='project-detail'>
+            <div class="project-detail-info">
+              <p>Cert project</p>
+              <p>HTML, CSS</p>
+              <a href="" target="_blank" class="open-project button">Open project</a>
+              <label for='product-landing-page'>
+                <div class='close-button button'></div>
+              </label>
+            </div>
+          </div>
+        </div>-->
+
+      </section>
+
+      <!-- CERTIFICATIONS-->
+      <section id='certifications'>
+        <ul>
+          <li>
+            <figure class='cert-info'>
+              <img src='comptia-a+.png' alt='CompTIA A+' class='cert-icon'>
+              <figcaption>CompTIA A+</figcaption>
+            </figure>
+            <div class="cert-description">Earners of the CompTIA A+ certification are proven problem 
+              solvers who are able to perform critical IT support tasks including device configuration, 
+              data backup and recovery, and operating system configuration. CompTIA A+ certified professionals
+              have demonstrated baseline security skills for IT support roles and are able to detect and remove malware, 
+              address privacy concerns, and troubleshoot core service challenges.
+            </div>
+          </li>
+          <li>
+            <figure class='cert-info'>
+              <img src='freecodecamp-cert.png' alt='Responsive Web Design'  class='cert-icon'>
+              <figcaption>Responsive Web Design</figcaption>
+            </figure>
+            <div class="cert-description">CSS, HTML, Flexbox, accessibility design practices</div>
+          </li>
+          <!--<li>
+            <figure class='cert-info'>
+              <img src='freecodecamp-cert.png' alt='JavaScript Algorithms and Data Structures' class='cert-icon'>
+              <figcaption>JavaScript Algorithms and Data Structures</figcaption>
+            </figure>
+            <div class="cert-description">CSS, HTML, Flexbox, accessibility design practices</div>
+            </li>-->
+        </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class='contact-links'>
+        <a href='mailto:davne.rozier@gmail.com' class='profile-link' target='_blank' title="Email"><span class="material-symbols-outlined">
+          mail
+          </span></a>
+        <a href='https://davnerozier.github.io/portfolio/' class='profile-link' target='_blank' title="GitHub"><i class="fa fa-github" style="font-size:24px"></i></a>
+        <a href='https://www.freecodecamp.org/fccafe3a090-c42f-4b2d-b3b0-10202f6f3f54' class='profile-link' target='_blank' title="freeCodeCamp"><i class="fa fa-free-code-camp" style="font-size:24px"></i>
+        </a>
+        <a href='https://www.linkedin.com/in/davne-rozier-49928517a' class='profile-link' target='_blank' title="LinkedIn"><i class="fa fa-linkedin-square" style="font-size:24px"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
